@@ -30,7 +30,7 @@ export default class Posts extends React.Component{
 
         let display_data=this.state.post_data.map(
             p=>{
-                return <tr >
+                return <tr key={p.id}>
                          <td>{p.id}</td>
                          <td>{p.title}</td>
                          <td>{p.body}</td>
